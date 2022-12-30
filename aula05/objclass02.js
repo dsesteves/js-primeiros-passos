@@ -41,11 +41,9 @@ class Individuo {
     }
 }
 
-new Individuo('José', 83, 1.75);
-
-
-/*const mary = new Individuo ('Maria', 38, 1.57);
+const jose = new Individuo ('José', 83, 1.75);
+const mary = new Individuo ('Maria', 38, 1.57);
 const dijest = new Individuo ('Diego', 118, 1.83);
 console.log(jose.classificarImc());
 console.log(mary.classificarImc());
-console.log(dijest.classificarImc());*/
+console.log(dijest.classificarImc());
