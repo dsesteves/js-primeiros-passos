@@ -21,7 +21,7 @@ class Carro {
     cor;
     gastoKmL;
 
-    constructor(marca, modelo, cor, gastoKmL) {
+    constructor(marca, modelo, cor, gastoKmL){
         this.marca = marca;
         this.modelo = modelo;
         this.cor = cor;
@@ -29,16 +29,16 @@ class Carro {
     }
 
     descrever() {
-        console.log(`O meu carro é da Marca ${this.marca}, Modelo ${this.modelo}, da cor ${this.cor} e faz ${this.gastoKmL.toFixed(2)} Km por Litro.`);
+    console.log(`O meu carro é da Marca ${this.marca}, Modelo ${this.modelo}, da cor ${this.cor} e faz ${this.gastoKmL.toFixed(2)} Km por Litro.`);
     }
 
-    calcularGastoEmKm(distanciaEmKm, precoCombustivel) {
+    calcularGastoEmKm(distanciaEmKm, precoCombustivel){
         return distanciaEmKm * this.gastoKmL * precoCombustivel;
     }
 }
 
-const corsa = new Carro("Chevrolet", "Corsa", "Branco", 1 / 13);
-const tempra = new Carro("Fiat", "Tempra", "Vermelho Vinho", 1 / 7);
+const corsa = new Carro ("Chevrolet", "Corsa", "Branco", 1/13);
+const tempra = new Carro ("Fiat", "Tempra", "Vermelho Vinho", 1/7);
 
 console.log(corsa.calcularGastoEmKm(84.6, 5));
 console.log(tempra.calcularGastoEmKm(84.6, 5));
